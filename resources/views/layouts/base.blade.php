@@ -56,8 +56,12 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    
+
     @livewireScripts
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @stack('scripts')
+
+    
 </body>
 
 </html>

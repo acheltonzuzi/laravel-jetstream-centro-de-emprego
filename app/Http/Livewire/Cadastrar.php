@@ -52,14 +52,18 @@ class Cadastrar extends Component
             $pessoa->email = $this->email;
             $pessoa->cv = $nomePdf;
             $pessoa->save();
+            $this->dispatchBrowserEvent("cadastrado",[
+                'title'=>'foste cadastrado',
+                'icon'=>'success',
+                'iconColor'=>'green'
+            ]
+            );
             $this->reset();
-            $this->cvpdf = "";
             Session()->flash("sucesso", "upload feito com sucesso");
-            $this->dispatchBrowserEvent($event = "swal:modal", $data = [
-                "title" => "Good job!",
-                "text" => "You clicked the button!",
-                "icon" => "success",
-            ]);
+            
         }
     }
+
+
+   
 }

@@ -25,6 +25,9 @@
                     <a class="text-white pl-2" href="">
                         <i class="fab fa-youtube"></i>
                     </a>
+                    <a class="text-white pl-2" href="{{route("login")}}">
+                       <span class="text-orange-500 hover:text-white">entrar</span> 
+                    </a>
                 </div>
             </div>
         </div>

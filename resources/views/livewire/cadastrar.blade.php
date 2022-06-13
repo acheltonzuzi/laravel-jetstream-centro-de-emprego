@@ -111,7 +111,7 @@
                         aria-describedby="file_input_help" id="file_input" type="file" required>
                     @if (Session()->has('extensao'))
                         <p class="mt-1 text-sm text-red-500 dark:text-gray-300" id="file_input_help">
-                            {{Session("extensao")}}
+                            {{ Session('extensao') }}
                         </p>
                     @endif
 
@@ -128,3 +128,16 @@
     </div>
 
 </div>
+
+
+@push('scripts')
+    <script>
+        window.addEventListener("cadastrado", function(e) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Cadastrado',
+                text: 'usuário cadastrado com sucesso',
+            })
+        })
+    </script>
+@endpush
