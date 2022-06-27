@@ -23,7 +23,7 @@ class Cadastrar extends Component
     public $email = "";
     public $cvpdf;
     public $provincias = array(
-        "cabinda", "zaire", "uíge", "bengo", "lunda norte", "lunda sul", "cuanza norte", "cuanza sul", "luanda", "huambo", "huíla", "benguela", "moxico", "malange", "cunene", "namibe", "cuando cubango", "bié"
+        "cabinda", "zaire", "uige", "bengo", "lunda norte", "lunda sul", "cuanza norte", "cuanza sul", "luanda", "huambo", "huila", "benguela", "moxico", "malange", "cunene", "namibe", "cuando cubango", "bie"
     );
     public function render()
     {
