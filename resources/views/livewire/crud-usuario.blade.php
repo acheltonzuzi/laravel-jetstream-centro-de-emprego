@@ -3,7 +3,8 @@
     <hr>
     @livewire('graficos')
     <div>
-        <a href="{{route("cadastrar")}}" class="shadow py-2 px-4 bg-blue-500 text-white rounded-lg m-4 hover:bg-blue-400 hover:shadow-lg">Novo
+        <a href="{{ route('cadastrar') }}"
+            class="shadow py-2 px-4 bg-blue-500 text-white rounded-lg m-4 hover:bg-blue-400 hover:shadow-lg">Novo
             Usuário</a>
 
     </div>
@@ -52,11 +53,12 @@
                             </td>
 
                             <td class="px-6 py-4 text-right">
-                                <a href="#"
+                                <a href="{{ route('detalhe', $usuario->id) }}"
                                     class="font-medium text-green-600 dark:text-green-500 hover:underline">Detalhe</a>
                             </td>
                             <td class="px-6 py-4 text-right">
-                                <a href="#"
+
+                                <a wire:click.prevent='apagar({{ $usuario->id }})' href="#"
                                     class="font-medium text-red-600 dark:text-red-500 hover:underline">Deletar</a>
                             </td>
                         </tr>

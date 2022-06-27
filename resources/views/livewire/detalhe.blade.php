@@ -1,3 +1,3 @@
-<div>
-    {{-- Do your work, then step back. --}}
+<div class="p-10">
+    Nome:{{$user->nome}}
 </div>

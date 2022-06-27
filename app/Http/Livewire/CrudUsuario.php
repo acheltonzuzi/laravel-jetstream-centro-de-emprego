@@ -14,4 +14,12 @@ class CrudUsuario extends Component
         $usuarios=Usuario::Paginate(20);
         return view('livewire.crud-usuario',compact("usuarios"));
     }
+
+    public function apagar($id){
+        $usuario=Usuario::find($id);
+        $usuario->delete();
+        unlink(storage_path('app/pdfs/'.$usuario->cv));
+    }
+
+
 }
