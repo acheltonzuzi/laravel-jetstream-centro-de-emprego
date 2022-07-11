@@ -21,6 +21,7 @@ class Cadastrar extends Component
     public $bairro = "";
     public $telefone = "";
     public $email = "";
+    public $profissao = "";
     public $cvpdf;
     public $provincias = array(
         "cabinda", "zaire", "uige", "bengo", "lunda norte", "lunda sul", "cuanza norte", "cuanza sul", "luanda", "huambo", "huila", "benguela", "moxico", "malange", "cunene", "namibe", "cuando cubango", "bie"
@@ -50,6 +51,7 @@ class Cadastrar extends Component
             $pessoa->bairro = $this->bairro;
             $pessoa->telefone = $this->telefone;
             $pessoa->email = $this->email;
+            $pessoa->profissao = $this->profissao;
             $pessoa->cv = $nomePdf;
             $pessoa->save();
             $this->dispatchBrowserEvent("cadastrado",[

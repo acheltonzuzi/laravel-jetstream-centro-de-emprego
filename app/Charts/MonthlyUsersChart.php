@@ -17,7 +17,7 @@ class MonthlyUsersChart
     public function build(): \ArielMejiaDev\LarapexCharts\BarChart
     {
         $cabinda=Usuario::Where("provincia","cabinda")->count();
-        $cunene=Usuario::Where("provincia","Cunene")->count();
+        $cunene=Usuario::Where("provincia","cunene")->count();
         $bie=Usuario::Where("provincia","Bie")->count();
         $lunda_norte=Usuario::Where("provincia","lunda norte")->count();
         $lunda_sul=Usuario::Where("provincia","lunda sul")->count();

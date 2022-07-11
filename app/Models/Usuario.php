@@ -20,6 +20,7 @@ class Usuario extends Model
         "bairro",
         "telefone",
         "email",
+        "profissao",
         "cv",
     ];
 

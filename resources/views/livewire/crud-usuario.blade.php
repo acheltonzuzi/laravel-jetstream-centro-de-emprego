@@ -6,7 +6,7 @@
         <a href="{{ route('cadastrar') }}"
             class="shadow py-2 px-4 bg-blue-500 text-white rounded-lg m-4 hover:bg-blue-400 hover:shadow-lg">Novo
             Usuário</a>
-
+        <input type="text" wire:model.debounce='search' class="roudend rounded-md w-30" placeholder="pesquisar">
     </div>
     <div id="tabela" class="mt-5">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -23,7 +23,7 @@
                             Telefone
                         </th>
                         <th scope="col" class="px-6 py-3">
-                            Sexo
+                            Profissao
                         </th>
 
 
@@ -49,7 +49,7 @@
                                 {{ $usuario->telefone }}
                             </td>
                             <td class="px-6 py-4">
-                                {{ $usuario->sexo }}
+                                {{ $usuario->profissao }}
                             </td>
 
                             <td class="px-6 py-4 text-right">

@@ -25,6 +25,7 @@ return new class extends Migration
             $table->String("bairro");
             $table->String("telefone");
             $table->String("email")->unique();
+            $table->String("profissao");
             $table->String("cv");
             $table->timestamps();
         });
